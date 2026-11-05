@@ -10,7 +10,7 @@ window.WIKI_DATA = {
     updated: "2026-11-05"
   },
   categories: [
-    { id: "intro", name: "入门", entries: ["newbie-guide", "glossary"] },
+    { id: "intro", name: "入门", entries: ["newbie-guide", "glossary", "sources"] },
     { id: "material", name: "材质与工艺", entries: ["fabric", "webbing-buckle", "stitching", "molle"] },
     { id: "gear", name: "装备品类", entries: ["ronin-belt", "belt-ratchet", "carry-system", "pouches", "fit-principle"] },
     { id: "cos", name: "造型还原党", entries: ["cos-overview", "cag-analysis", "cat-analysis", "sfg-analysis"] },
@@ -27,7 +27,7 @@ window.WIKI_DATA = {
       title: "新手入门指南",
       tags: ["入门", "指南"],
       desc: "三问定向 + 预算档位 + 通用采购原则",
-      see: ["glossary","ronin-belt","cos-overview","self-overview","airsoft-overview"],
+      see: ["glossary","sources","ronin-belt","cos-overview","self-overview","airsoft-overview"],
       updated: "2026-11-05",
       body: [
         "<h2>按身份快速进</h2>",
@@ -357,7 +357,7 @@ window.WIKI_DATA = {
       title: "造型还原党",
       tags: ["流派", "还原", "cos"],
       desc: "以还原角色/单位为目标，还原度三级与实操方法",
-      see: ["self-overview","brands","secondhand"],
+      see: ["sources","self-overview","brands","secondhand"],
       updated: "2026-11-05",
       body: [
         "<h2>定义</h2>",
@@ -375,7 +375,12 @@ window.WIKI_DATA = {
         "<li><b>分层验收</b>：先形似出片，再逐步升级神似，避免一次性投入翻车。</li>",
         "</ol>",
         "<h2>资料与考证规则（硬规矩）</h2>",
-        "<p>还原词条的装备信息，一律以<b>一手考证</b>为准：<a href=\"https://www.junpin360.com/\" target=\"_blank\" rel=\"noopener\">战甲网（junpin360.com）</a>的军品资料，以及圈内实物收藏考证帖。二手转述、带货文案、游戏皮肤不作依据。</p>",
+        "<p>还原词条的装备信息，一律以<b>一手考证</b>为准。本站认可的主源有两个：</p>",
+        "<table><tr><th>来源</th><th>定位</th><th>怎么用</th></tr>",
+        "<tr><td><a href=\"https://www.junpin360.com/\" target=\"_blank\" rel=\"noopener\"><b>战甲网</b></a><br><span style=\"font-size:12px;opacity:.65\">junpin360.com</span></td><td>军品资料与装备考证的公开主源</td><td>真兵搭配、型号断代、时期划分，一律以此为准；有固定网址，条目里直接外链</td></tr>",
+        "<tr><td><b>微信公众号「金属面条」</b><br><span style=\"font-size:12px;opacity:.65\">微信内搜号</span></td><td>装备考证与真兵解析的持续输出源</td><td>细节辨析、冷门型号、实物对照常比公开站更细；公众号无稳定外链，引用格式见下</td></tr></table>",
+        "<p class=\"note\"><b>公众号怎么引</b>：不写网址（会失效），写「金属面条《文章标题》（发布时间）」，读者在微信内搜号回查。同一结论若战甲网也有，优先链战甲网。</p>",
+        "<p>除这两个主源，圈内实物收藏考证帖可作补充。二手转述、带货文案、游戏皮肤不作依据。</p>",
         "<ul><li><b>图注必须与画面一致</b>：写「某单位参考图」之前，先看清图里到底是谁。反例：2003 年摩苏尔行动那张现场照，网上长期标成「三角洲」，实际画面主体是戴全耳罩盔、穿四色丛林的常规部队。</li><li><b>用图三查</b>：能核到原始出处、能看清装具细节、单位归属有据。</li><li><b>不确定就标「待核实」</b>：宁可空着，不编型号。年份与型号对不上是还原党最常见的翻车点。</li><li><b>时期不混</b>：同一单位不同年代装备不通用，混期一眼假。</li></ul>",
         "<p class=\"note\">本站已按此规则设立「真兵图鉴」子词条：<a href=\"#cag-analysis\">CAG/三角洲</a>、<a href=\"#cat-analysis\">USSS CAT</a>、<a href=\"#sfg-analysis\">SFG 绿色贝雷帽</a>。</p>",
         "<h2>与其他流派的关系</h2>",
@@ -489,12 +494,12 @@ window.WIKI_DATA = {
       title: "CAG / 三角洲部队 · 真兵配装解析",
       tags: ["真兵图", "CAG", "三角洲", "造型还原", "考证"],
       desc: "按装备分水岭拆解三角洲：AWS → 圣灵烟绿 → Crye 迷彩 → 现代高切",
-      see: ["cos-overview", "cat-analysis", "sfg-analysis", "carry-system"],
+      see: ["sources", "cos-overview", "cat-analysis", "sfg-analysis", "carry-system"],
       updated: "2026-11-05",
       body: [
 "<h2>先把名字和规矩说清楚</h2>",
 "<p><b>CAG</b>（Combat Applications Group，战斗应用大队）是 1st SFOD-D 的正式代号，即俗称的<b>三角洲部队</b>（Delta / The Unit / ACE）。中文圈流传的「CAT＝危机行动组」只是别称讹传；真正的 USSS CAT 是另一个单位，见 <a href='#cat-analysis'>特勤局反突击队</a>。</p>",
-"<p class='note'><b>本站规矩（重要）</b>：真兵搭配一律以一手考证为准——<a href='https://www.junpin360.com/' target='_blank' rel='noopener'>战甲网（junpin360.com）</a> 与圈内实物收藏考证帖。网上流传的图注错标极多，同一张图常被安到三四个单位头上；<b>用图前先核对原始出处，核不到就不写</b>。</p>",
+"<p class='note'><b>本站规矩（重要）</b>：真兵搭配一律以一手考证为准——<a href='https://www.junpin360.com/' target='_blank' rel='noopener'>战甲网（junpin360.com）</a>、微信公众号「金属面条」的考证内容，与圈内实物收藏考证帖。网上流传的图注错标极多，同一张图常被安到三四个单位头上；<b>用图前先核对原始出处，核不到就不写</b>。</p>",
 "<h2>四个分水岭（这是三角洲最容易搞错的地方）</h2>",
 "<table><tr><th>时期</th><th>装具主线</th><th>判断依据</th></tr>",
 "<tr><td>1990s（含摩加迪沙）</td><td><b>AWS</b> 装具，四色丛林</td><td>三角洲长期是 AWS 的铁杆用户，不是这十几年才换的「Eagle 一类」</td></tr>",
@@ -521,7 +526,7 @@ window.WIKI_DATA = {
 "<h2>还原建议</h2>",
 "<ul><li><b>先选时期，再买件</b>：AWS（90s）/ 圣灵烟绿（03–05）/ Crye MC（06 后）/ 现代高切，四套几乎不通用。</li><li><b>抓一件硬标志物</b>：圣灵烟绿 MTV、自改 MICH 2002、GSGM 四孔盔——一件就能定性。</li><li><b>混穿不等于乱穿</b>：CAG 自由度大，但配色逻辑与年代逻辑不能破。</li><li><b>不伪造标识</b>：不佩戴现役单位臂章，不当自己是兵。</li></ul>",
 "<h2>资料来源</h2>",
-"<ul><li>战甲网（junpin360.com）：军品资料与装备考证主源，本站真兵搭配一律以此为准。</li><li>圈内实物考证长文《2003 年之后的三角洲特种部队造型装备收藏总结》（SEALS天）：圣灵标签断代、2003 MTV、2004 费卢杰自改盔、2006 转 Crye 的划分依据。</li><li>图片均为美军官方公有领域照片（Wikimedia Commons）。</li></ul>",
+"<ul><li>战甲网（junpin360.com）：军品资料与装备考证主源，本站真兵搭配一律以此为准。</li><li>微信公众号「金属面条」：装备考证与真兵解析内容（微信内搜号回查，引用注文章标题与发布时间）。</li><li>圈内实物考证长文《2003 年之后的三角洲特种部队造型装备收藏总结》（SEALS天）：圣灵标签断代、2003 MTV、2004 费卢杰自改盔、2006 转 Crye 的划分依据。</li><li>图片均为美军官方公有领域照片（Wikimedia Commons）。</li></ul>",
       ].join("")
     },
     {
@@ -529,7 +534,7 @@ window.WIKI_DATA = {
       title: "USSS CAT · 特勤局反突击队",
       tags: ["真兵图", "CAT", "特勤局", "全黑造型"],
       desc: "真正的 CAT 是特勤局反突击队；与三角洲的「CAT」别称不是一回事",
-      see: ["cag-analysis", "cos-overview", "carry-system"],
+      see: ["sources", "cag-analysis", "cos-overview", "carry-system"],
       updated: "2026-11-05",
       body: [
 "<h2>它到底是谁</h2>",
@@ -539,7 +544,7 @@ window.WIKI_DATA = {
 "<ul><li><b>全黑体系</b>：作战服、载具、武器整体黑色；难点是黑度统一——廉价尼龙黑常偏灰偏蓝，一混就假。</li><li><b>重甲轮廓</b>：偏厚重的板载具配大量护面，不是 JPC 那种轻薄下场件。</li><li><b>场合感</b>：常与西装护卫混编出现，造型要「保镖」而不是「下场」。</li><li><b>不做标识</b>：不佩戴伪造的执法/特勤徽章与臂章，这是法律与场合双重风险。</li></ul>",
 "<p class='note'>待核实项：具体载具型号、武器型号（历史上有 SR-16 系与 M4 系说法）与年份对应关系，需以实物考证为准，本站不写未核实型号。</p>",
 "<h2>资料来源</h2>",
-"<ul><li>战甲网（junpin360.com）：军品资料与装备考证主源。</li><li>待补充：特勤局官方发布的相关照片（公有领域）到位后再补图与型号表。</li></ul>",
+"<ul><li>战甲网（junpin360.com）：军品资料与装备考证主源。</li><li>微信公众号「金属面条」：真兵装备与造型考证内容（微信内搜号回查）。</li><li>待补充：特勤局官方发布的相关照片（公有领域）到位后再补图与型号表。</li></ul>",
       ].join("")
     },
     {
@@ -547,7 +552,7 @@ window.WIKI_DATA = {
       title: "SFG 绿色贝雷帽 · 真兵配装解析",
       tags: ["真兵图", "SFG", "绿色贝雷帽", "OCP", "阿富汗"],
       desc: "按三张阿富汗实拍拆 SFG：三沙重载期到 Multicam 高切期",
-      see: ["cos-overview", "cag-analysis", "molle", "carry-system"],
+      see: ["sources", "cos-overview", "cag-analysis", "molle", "carry-system"],
       updated: "2026-11-05",
       body: [
 "<h2>单位定位</h2>",
@@ -581,7 +586,7 @@ window.WIKI_DATA = {
 "<h2>还原建议</h2>",
 "<ul><li><b>最适合萌新的真兵线</b>：OCP/三沙都好找，ACH 盔 + 制式载具门槛低于 CAG 的高切 + 圣灵。</li><li><b>头盔是分水岭</b>：全耳罩＝2008 前，高切＝2010s 后。</li><li><b>留电台位</b>：一根长天线比堆五个弹匣更「像 SFG」。</li><li><b>允许当地元素</b>：围巾、便帽这类混搭是真实存在的，但别堆成民族风。</li></ul>",
 "<h2>资料来源</h2>",
-"<ul><li>战甲网（junpin360.com）：真兵搭配与装备考证主源，本站后续新条目一律以此为准。</li><li>图片均为美军官方公有领域照片（Wikimedia Commons），图注按照片实际可见内容撰写。</li></ul>",
+"<ul><li>战甲网（junpin360.com）：真兵搭配与装备考证主源，本站后续新条目一律以此为准。</li><li>微信公众号「金属面条」：真兵解析与装备考证内容（微信内搜号回查，引用注标题与发布时间）。</li><li>图片均为美军官方公有领域照片（Wikimedia Commons），图注按照片实际可见内容撰写。</li></ul>",
       ].join("")
     },
     // ===== 品牌导航 =====
@@ -612,6 +617,46 @@ window.WIKI_DATA = {
         "<tr><td>国产工装大牌</td><td>麦格霍斯、自由兵等，价格低、品控稳定、设计偏户外通勤</td></tr>",
         "<tr><td>复刻厂</td><td>专做经典军版型复刻（Crye、Eagle 等 IP 为主），还原度分档定价</td></tr></table>",
         "<p class='todo'>社区贡献：欢迎补充各厂牌的具体口碑款、购买渠道和翻车记录，附上可核实的来源。</p>"
+      ].join("")
+    },
+    {
+      id: "sources",
+      title: "考证资料源",
+      tags: ["考证", "来源", "战甲网", "金属面条", "辨伪"],
+      desc: "装备考证认哪些来源：战甲网与微信公众号「金属面条」",
+      see: ["cos-overview", "cag-analysis", "sfg-analysis"],
+      updated: "2026-11-05",
+      body: [
+        "<h2>为什么要单列这一页</h2>",
+        "<p>尼龙圈的信息污染很重：同一个型号能有三四种叫法，同一张照片能被标成三支部队，带货文案和游戏皮肤经常混进「考证」。所以本站对装备信息设了来源门槛——<b>只认一手考证，不认二手转述</b>。这一页列出认可的主源，投稿和查阅都按这个标准。</p>",
+        "<h2>主源清单</h2>",
+        "<table><tr><th>来源</th><th>擅长什么</th><th>怎么用</th></tr>",
+        "<tr><td><b><a href=\"https://www.junpin360.com/\" target=\"_blank\" rel=\"noopener\">战甲网</a></b><br><span style=\"font-size:12px;opacity:.65\">junpin360.com</span></td><td>军品资料库、装备考证长文、真兵搭配解析</td><td>本站真兵与型号断代的第一依据。有固定网址，词条里直接外链。</td></tr>",
+        "<tr><td><b>微信公众号「金属面条」</b><br><span style=\"font-size:12px;opacity:.65\">微信内搜号</span></td><td>装备考证与真兵解析的持续输出，细节辨析、冷门件、实物对照常比公开站更细</td><td>公众号文章没有稳定网址，条目里写「金属面条《文章标题》（发布时间）」，读者在微信内搜号回查。</td></tr>",
+        "</table>",
+        "<p class=\"note\"><b>优先级</b>：同一个结论两个源都有 → 链战甲网（可长期访问）；只有公众号有 → 按上面的格式标注。两者冲突时标「说法不一」并各注出处，不擅自选一个当定论。</p>",
+        "<h2>不算依据的东西</h2>",
+        "<ul>",
+        "<li><b>带货文案与商品详情页</b>：型号名词常被营销改写，年份和单位归属更不可信。</li>",
+        "<li><b>游戏、影视、动漫皮肤</b>：本身就是二次设计，不能倒推真兵配置。</li>",
+        "<li><b>无出处的网图图注</b>：图注错标是圈内最常见的事故，本站有专门的辨伪示例（见 CAG 词条）。</li>",
+        "<li><b>「我朋友说」「群里都这么讲」</b>：没有实物或文献支撑的口径，只能当线索，不能当结论。</li>",
+        "</ul>",
+        "<h2>怎么判断一张图能不能用</h2>",
+        "<p>三查，缺一条就不用：</p>",
+        "<ol>",
+        "<li><b>查出处</b>：能追到原始发布方（军方 DVIDS、机构官网、摄影师），不是转载 N 手的压缩图。</li>",
+        "<li><b>查细节</b>：放大能看清装具型号特征（扣具形状、盔型切口、织带颜色），糊到看不清就写不了图注。</li>",
+        "<li><b>查归属</b>：单位有明确记载，不是「看起来像」。画面主体常和标题说的不是一支部队。</li>",
+        "</ol>",
+        "<h2>投稿要求</h2>",
+        "<ul>",
+        "<li><b>写清来源</b>：每条型号信息后面标出处（战甲网文章名 / 公众号标题 + 时间 / 实物收藏帖）。</li>",
+        "<li><b>不确定标「待核实」</b>：宁可空着，不编型号。年份与型号对不上是还原党最常见的翻车点。</li>",
+        "<li><b>时期不混</b>：同一单位不同年代的装备不通用，混期一眼假，所以每条都标年代。</li>",
+        "<li><b>有争议就摆出来</b>：两种说法都有依据时，两个都写，别当裁判。</li>",
+        "</ul>",
+        "<p class=\"todo\">社区贡献：发现新的可靠考证源（实物收藏博客、老兵回忆录、军方公开文档、博物馆藏品图录），欢迎按上面格式投稿补充。</p>",
       ].join("")
     }
   ]
