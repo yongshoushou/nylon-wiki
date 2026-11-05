@@ -32,6 +32,10 @@ build.js     构建脚本：改完 data.js 执行 node build.js 同步进 index.
 
 贡献原则：只写可通用的知识，不写个人数据；不确定的信息标注「待核实」。
 
+## 许可证
+
+内容遵循 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans)：署名 + 相同方式共享。可自由转载、修改，需署名并以相同许可证再分发。
+
 ## 本地运行
 
 无需构建，直接用浏览器打开 `index.html` 即可；或本地起任意静态服务器。
